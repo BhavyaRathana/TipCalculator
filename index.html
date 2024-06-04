@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <fieldset>
+                    <center>
+            <h1>Tip Calculator</h1>
+        </center>
+
+        <fieldset>
+            <legend>TIP CALCULATOR</legend><br>
+            <form id="tipForm">
+                <label for="billAmount"> Bill Amount:</label>
+                <input type="number" id="billAmount" placeholder="Enter bill amount" required><br><br>
+
+                <label for="tipPercentage">Tip Percentage:</label>
+                <input type="number" id="tipPercentage" placeholder="Enter tip percentage" required><br><br>
+
+                <label for="numberOfPeople">Number of People:</label>
+                <input type="number" id="numberOfPeople" placeholder="Enter number of people" required><br><br>
+                <br>
+                <button type="submit">Calculate</button>
+                <input type="reset" value="Reset"><br>
+            </form>
+        </fieldset>
+        <BR>
+        <BR>
+        <fieldset>
+            <legend>AMOUNT DIVISION</legend>
+            <div id="results">
+                <p>Total Amount of Tip: <span id="totalTip">$0.00</span></p>
+                <p>Total Bill ( Including Tip): <span id="totalBill">$0.00</span></p>
+                <p>Amount per Person: <span id="amountPerPerson">$0.00</span></p>
+            </div>
+        </fieldset>
+
+        </fieldset>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
